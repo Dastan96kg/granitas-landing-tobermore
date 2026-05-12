@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>GRANITAS KG — Производство Брусчатки в Бишкеке</title>
+  <link>https://dastan96kg.github.io/granitas-landing-tobermore/</link>
+  <atom:link href="https://dastan96kg.github.io/granitas-landing-tobermore/feed.xml" rel="self" type="application/rss+xml"/>
+  <description>GRANITAS KG — производитель премиальной брусчатки в Бишкеке, Кыргызстан. Цемент М600 (Иран). 10 лет на рынке.</description>
+  <language>ru-RU</language>
+  <lastBuildDate>Thu, 08 May 2026 09:00:00 +0600</lastBuildDate>
+  <pubDate>Thu, 08 May 2026 09:00:00 +0600</pubDate>
+  <generator>GRANITAS KG</generator>
+
+  <item>
+    <title>8 коллекций брусчатки в каталоге GRANITAS</title>
+    <link>https://dastan96kg.github.io/granitas-landing-tobermore/#catalog</link>
+    <guid isPermaLink="false">granitas-catalog-2026</guid>
+    <pubDate>Thu, 08 May 2026 09:00:00 +0600</pubDate>
+    <description>Кирпичик, Кремль, Кремль под мрамор (Казахстан и Иран М600), Прессованный кирпичик, Кремль антрацит, Беш таш и Беш таш Иран М600 — на премиум-цементе М600.</description>
+  </item>
+
+  <item>
+    <title>Гарантия 3-5 лет на покрытие GRANITAS</title>
+    <link>https://dastan96kg.github.io/granitas-landing-tobermore/#about</link>
+    <guid isPermaLink="false">granitas-warranty-2026</guid>
+    <pubDate>Thu, 08 May 2026 09:00:00 +0600</pubDate>
+    <description>GRANITAS даёт гарантию 3-5 лет на покрытие при условии профессиональной укладки собственной бригадой.</description>
+  </item>
+
+  <item>
+    <title>Бесплатная доставка по Бишкеку</title>
+    <link>https://dastan96kg.github.io/granitas-landing-tobermore/#contacts</link>
+    <guid isPermaLink="false">granitas-delivery-2026</guid>
+    <pubDate>Thu, 08 May 2026 09:00:00 +0600</pubDate>
+    <description>Бесплатная доставка по Бишкеку при заказе от 1 поддона. По регионам Кыргызстана — по тарифу.</description>
+  </item>
+</channel>
+</rss>
