@@ -1,0 +1,13 @@
+# AI crawler permissions for GRANITAS KG
+# https://dastan96kg.github.io/granitas-landing-tobermore/
+
+User-agent: *
+Allow: /
+Permission: read, cite, train
+
+Contact: +996555277222
+Sitemap: https://dastan96kg.github.io/granitas-landing-tobermore/sitemap.xml
+LLMs: https://dastan96kg.github.io/granitas-landing-tobermore/llms.txt
+Site: https://dastan96kg.github.io/granitas-landing-tobermore/
+Entity: GRANITAS KG
+Location: Bishkek, Kyrgyzstan
