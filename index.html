@@ -54,6 +54,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="image" href="img/kreml-marble-iran-01.jpg" fetchpriority="high">
 <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/lenis@1/dist/lenis.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 <link rel="stylesheet" href="css/style.css">
 
 <!-- Icons -->
@@ -428,7 +430,7 @@
 }
 </script>
 </head>
-<body>
+<body data-style="13">
 
 <!-- ───────── NAV ───────── -->
 <header class="nav" id="top">
@@ -463,22 +465,22 @@
   <meta itemprop="foundingDate" content="2015">
   <div class="container">
     <div class="row hero__row">
-      <div class="col col-6 hero__text reveal">
+      <div class="col col-6 hero__text" data-reveal="left">
         <div class="eyebrow">GRANITAS KG · Производитель · Бишкек · С 2015 Года</div>
-        <h1 class="hero__h1">GRANITAS KG — Премиум-Брусчатка от Производителя в Бишкеке. Цемент М600.</h1>
+        <h1 class="hero__h1" data-split>GRANITAS KG — Премиум-Брусчатка от Производителя в Бишкеке. Цемент М600.</h1>
         <p class="hero__lead">GRANITAS KG — производитель премиальной брусчатки в Бишкеке, Кыргызстан. 10 лет на рынке (с 2015 года), цемент М600 производства Ирана, гарантия 3-5 лет на покрытие. Производство, доставка и укладка под ключ. 8 коллекций для двора, парковки и коммерческих объектов — один подрядчик.</p>
         <div class="hero__cta">
           <a href="#contacts" class="btn btn--primary">Получить Расчёт за 15 Минут</a>
           <a href="#catalog" class="btn btn--outline">Смотреть Каталог</a>
         </div>
         <ul class="trust">
-          <li><strong>10+</strong><span>Лет на Рынке</span></li>
-          <li><strong>1000+</strong><span>Готовых Объектов</span></li>
-          <li><strong>5</strong><span>Лет Гарантии</span></li>
+          <li><strong data-count="10+">10+</strong><span>Лет на Рынке</span></li>
+          <li><strong data-count="1000+">1000+</strong><span>Готовых Объектов</span></li>
+          <li><strong data-count="5">5</strong><span>Лет Гарантии</span></li>
           <li><strong>0 сом</strong><span>Доставка по Бишкеку</span></li>
         </ul>
       </div>
-      <div class="col col-6 hero__media reveal">
+      <div class="col col-6 hero__media" data-reveal="right" data-parallax="0.2">
         <figure class="img-frame img-frame--tall">
           <img src="img/kreml-marble-iran-01.jpg" alt="Брусчатка Кремль под мрамор Иран М600 GRANITAS — премиальная глянцевая мраморная текстура, толщина 5 см" width="800" height="1000" fetchpriority="high">
           <figcaption>Кремль под мрамор · Иран М600</figcaption>
@@ -492,10 +494,10 @@
 <section class="kpi" id="kpi">
   <div class="container">
     <div class="row">
-      <div class="col col-3 reveal"><div class="kpi__card"><div class="kpi__num">10</div><div class="kpi__label">Лет Опыта Производства</div></div></div>
-      <div class="col col-3 reveal"><div class="kpi__card"><div class="kpi__num">9</div><div class="kpi__label">Коллекций в Каталоге</div></div></div>
-      <div class="col col-3 reveal"><div class="kpi__card"><div class="kpi__num">5</div><div class="kpi__label">Лет Гарантии на Покрытие</div></div></div>
-      <div class="col col-3 reveal"><div class="kpi__card kpi__card--accent"><div class="kpi__num">0₽</div><div class="kpi__label">Доставка по Бишкеку</div></div></div>
+      <div class="col col-3" data-reveal><div class="kpi__card"><div class="kpi__num" data-count="10">10</div><div class="kpi__label">Лет Опыта Производства</div></div></div>
+      <div class="col col-3" data-reveal><div class="kpi__card"><div class="kpi__num" data-count="9">9</div><div class="kpi__label">Коллекций в Каталоге</div></div></div>
+      <div class="col col-3" data-reveal><div class="kpi__card"><div class="kpi__num" data-count="5">5</div><div class="kpi__label">Лет Гарантии на Покрытие</div></div></div>
+      <div class="col col-3" data-reveal><div class="kpi__card kpi__card--accent"><div class="kpi__num">0₽</div><div class="kpi__label">Доставка по Бишкеку</div></div></div>
     </div>
   </div>
 </section>
@@ -504,7 +506,7 @@
 <section class="section" id="about" aria-labelledby="about-title">
   <div class="container">
     <div class="row split">
-      <div class="col col-6 reveal">
+      <div class="col col-6" data-reveal="left">
         <div class="split__text">
           <div class="eyebrow">О Компании</div>
           <h2 id="about-title">GRANITAS KG — 10 Лет Производства Брусчатки в Бишкеке</h2>
@@ -531,7 +533,7 @@
           </ul>
         </div>
       </div>
-      <div class="col col-6 reveal">
+      <div class="col col-6" data-reveal="right" data-parallax="0.2">
         <figure class="img-frame">
           <img src="img/production-02.jpg" alt="Производство GRANITAS — паллеты с брусчаткой разных видов готовые к отгрузке, Бишкек" width="800" height="600" loading="lazy">
           <figcaption>Производство · Готовая Продукция</figcaption>
@@ -544,7 +546,7 @@
 <!-- ───────── CATALOG ───────── -->
 <section class="section" id="catalog">
   <div class="container">
-    <header class="section__head">
+    <header class="section__head section-header">
       <div class="eyebrow">Каталог</div>
       <h2>Каталог Продукции</h2>
       <p class="section__lead">9 коллекций брусчатки на цементе М600 (Иран) и цементе Казахстана. Толщина 5 и 6 см. От классической плетёнки до глянцевого мрамора.</p>
@@ -552,7 +554,7 @@
 
     <div class="row cards">
 
-      <div class="col col-4 reveal">
+      <div class="col col-4" data-reveal>
         <article class="card">
           <figure class="card__media"><img src="img/kirpichik-01.jpg" alt="Брусчатка Кирпичик GRANITAS — белый и тёмно-коричневый, плетёночная раскладка, толщина 5 см" width="600" height="450" loading="lazy"></figure>
           <div class="card__body">
@@ -564,7 +566,7 @@
         </article>
       </div>
 
-      <div class="col col-4 reveal">
+      <div class="col col-4" data-reveal>
         <article class="card">
           <figure class="card__media"><img src="img/kreml-01.jpg" alt="Брусчатка Кремль GRANITAS — прямоугольники с квадратными вставками, плетёнка, толщина 5 см" width="600" height="450" loading="lazy"></figure>
           <div class="card__body">
@@ -576,7 +578,7 @@
         </article>
       </div>
 
-      <div class="col col-4 reveal">
+      <div class="col col-4" data-reveal>
         <article class="card">
           <figure class="card__media"><img src="img/kreml-marble-kz-02.jpg" alt="Брусчатка Кремль под мрамор GRANITAS, цемент Казахстан — матовая мраморная текстура, толщина 5 см" width="600" height="450" loading="lazy"></figure>
           <div class="card__body">
@@ -588,7 +590,7 @@
         </article>
       </div>
 
-      <div class="col col-4 reveal">
+      <div class="col col-4" data-reveal>
         <article class="card card--featured">
           <div class="card__badge">Премиум</div>
           <figure class="card__media"><img src="img/kreml-marble-iran-02.jpg" alt="Премиум-брусчатка Кремль под мрамор Иран М600 GRANITAS — глянцевый мрамор, цемент М600 (Иран), толщина 5 см" width="600" height="450" loading="lazy"></figure>
@@ -601,7 +603,7 @@
         </article>
       </div>
 
-      <div class="col col-4 reveal">
+      <div class="col col-4" data-reveal>
         <article class="card">
           <figure class="card__media"><img src="img/pressed-kirpichik-03.jpg" alt="Прессованный кирпичик GRANITAS — усиленная брусчатка для парковок, толщина 6 см, нагрузка до 3,5 тонн" width="600" height="450" loading="lazy"></figure>
           <div class="card__body">
@@ -613,7 +615,7 @@
         </article>
       </div>
 
-      <div class="col col-4 reveal">
+      <div class="col col-4" data-reveal>
         <article class="card">
           <figure class="card__media"><img src="img/kreml-anthracite-01.jpg" alt="Брусчатка Кремль антрацит GRANITAS — графитовый монохром, толщина 5 см" width="600" height="450" loading="lazy"></figure>
           <div class="card__body">
@@ -625,7 +627,7 @@
         </article>
       </div>
 
-      <div class="col col-4 reveal">
+      <div class="col col-4" data-reveal>
         <article class="card">
           <figure class="card__media"><img src="img/besh-tash-01.jpg" alt="Брусчатка Беш Таш GRANITAS — мультиформатная мозаика разных размеров в одном паттерне, толщина 5 см" width="600" height="450" loading="lazy"></figure>
           <div class="card__body">
@@ -637,7 +639,7 @@
         </article>
       </div>
 
-      <div class="col col-4 reveal">
+      <div class="col col-4" data-reveal>
         <article class="card card--featured">
           <div class="card__badge">Премиум</div>
           <figure class="card__media"><img src="img/besh-tash-02.jpg" alt="Премиум-брусчатка Беш Таш Иран М600 GRANITAS — мультиформат на цементе М600 (Иран), серо-мраморная отделка, толщина 5 см" width="600" height="450" loading="lazy"></figure>
@@ -657,7 +659,7 @@
 <!-- ───────── ПРИМЕНЕНИЕ ───────── -->
 <section class="section section--alt" id="cases">
   <div class="container">
-    <header class="section__head">
+    <header class="section__head section-header">
       <div class="eyebrow">Применение</div>
       <h2>Где Используется Наша Брусчатка</h2>
       <p class="section__lead">Для каждого типа объекта — своя толщина, свой цемент, своя раскладка. Помогаем выбрать под нагрузку и бюджет.</p>
@@ -665,7 +667,7 @@
 
     <div class="row use-cases">
 
-      <div class="col col-4 reveal">
+      <div class="col col-4" data-reveal>
         <article class="use-case">
           <figure class="use-case__media"><img src="img/kreml-marble-kz-04.jpg" alt="Двор частного дома, уложенный брусчаткой Кремль под мрамор Казахстан GRANITAS" width="600" height="450" loading="lazy"></figure>
           <div class="use-case__body">
@@ -682,7 +684,7 @@
         </article>
       </div>
 
-      <div class="col col-4 reveal">
+      <div class="col col-4" data-reveal>
         <article class="use-case">
           <figure class="use-case__media"><img src="img/pressed-kirpichik-05.jpg" alt="Парковка с покрытием из прессованного кирпичика GRANITAS, толщина 6 см" width="600" height="450" loading="lazy"></figure>
           <div class="use-case__body">
@@ -699,7 +701,7 @@
         </article>
       </div>
 
-      <div class="col col-4 reveal">
+      <div class="col col-4" data-reveal>
         <article class="use-case">
           <figure class="use-case__media"><img src="img/kreml-marble-iran-02.jpg" alt="Коммерческий объект с премиум-брусчаткой Кремль под мрамор Иран М600 GRANITAS" width="600" height="450" loading="lazy"></figure>
           <div class="use-case__body">
@@ -724,13 +726,13 @@
 <section class="section" id="production">
   <div class="container">
     <div class="row split">
-      <div class="col col-6 reveal">
+      <div class="col col-6" data-reveal="left" data-parallax="0.2">
         <figure class="img-frame">
           <img src="img/production-01.jpg" alt="Производственная площадка GRANITAS в Бишкеке — погрузчик с поддонами готовой брусчатки, склад готовой продукции, ул. Восточная 248а" width="800" height="600" loading="lazy">
           <figcaption>Производственная площадка · ул. Восточная, 248а</figcaption>
         </figure>
       </div>
-      <div class="col col-6 reveal">
+      <div class="col col-6" data-reveal="right">
         <div class="split__text">
           <div class="eyebrow">Производство</div>
           <h2>10 Лет Производства в Бишкеке</h2>
@@ -765,22 +767,22 @@
 <!-- ───────── PROJECTS ───────── -->
 <section class="section section--alt" id="projects">
   <div class="container">
-    <header class="section__head">
+    <header class="section__head section-header">
       <div class="eyebrow">Портфолио</div>
       <h2>Проекты Заказчиков</h2>
       <p class="section__lead">Объекты GRANITAS в Бишкеке и регионах: дворы, парковки, коммерческие площади.</p>
     </header>
 
     <div class="row gallery">
-      <div class="col col-4 reveal"><figure class="img-frame img-frame--gal"><img src="img/kreml-marble-iran-01.jpg" alt="Объект GRANITAS — Кремль под мрамор Иран М600, премиум-укладка" width="600" height="450" loading="lazy"><figcaption>Кремль под Мрамор · Иран М600</figcaption></figure></div>
-      <div class="col col-4 reveal"><figure class="img-frame img-frame--gal"><img src="img/besh-tash-01.jpg" alt="Беш Таш во дворе частного дома, мультиформатная укладка GRANITAS" width="600" height="450" loading="lazy"><figcaption>Беш Таш · Частный Двор</figcaption></figure></div>
-      <div class="col col-4 reveal"><figure class="img-frame img-frame--gal"><img src="img/kreml-marble-kz-02.jpg" alt="Двор под брусчатку Кремль под мрамор Казахстан GRANITAS" width="600" height="450" loading="lazy"><figcaption>Кремль под Мрамор · KZ</figcaption></figure></div>
-      <div class="col col-4 reveal"><figure class="img-frame img-frame--gal"><img src="img/pressed-kirpichik-03.jpg" alt="Парковка с прессованным кирпичиком GRANITAS, толщина 6 см" width="600" height="450" loading="lazy"><figcaption>Прессованный · Парковка</figcaption></figure></div>
-      <div class="col col-4 reveal"><figure class="img-frame img-frame--gal"><img src="img/kirpichik-01.jpg" alt="Брусчатка Кирпичик GRANITAS — классическая плетёночная раскладка" width="600" height="450" loading="lazy"><figcaption>Кирпичик · Плетёнка</figcaption></figure></div>
-      <div class="col col-4 reveal"><figure class="img-frame img-frame--gal"><img src="img/kreml-marble-iran-02.jpg" alt="Кремль под мрамор Иран М600 на объекте — глянцевый мрамор GRANITAS" width="600" height="450" loading="lazy"><figcaption>Кремль · Иран М600</figcaption></figure></div>
-      <div class="col col-4 reveal"><figure class="img-frame img-frame--gal"><img src="img/kreml-anthracite-01.jpg" alt="Современный двор с брусчаткой Кремль антрацит GRANITAS" width="600" height="450" loading="lazy"><figcaption>Кремль Антрацит</figcaption></figure></div>
-      <div class="col col-4 reveal"><figure class="img-frame img-frame--gal"><img src="img/kreml-marble-kz-04.jpg" alt="Кремль под мрамор Казахстан GRANITAS на готовом объекте" width="600" height="450" loading="lazy"><figcaption>Кремль под Мрамор · KZ</figcaption></figure></div>
-      <div class="col col-4 reveal"><figure class="img-frame img-frame--gal"><img src="img/pressed-kirpichik-01.jpg" alt="Прессованный кирпичик серый GRANITAS — для нагруженных площадок" width="600" height="450" loading="lazy"><figcaption>Прессованный · Серый</figcaption></figure></div>
+      <div class="col col-4" data-reveal><figure class="img-frame img-frame--gal"><img src="img/kreml-marble-iran-01.jpg" alt="Объект GRANITAS — Кремль под мрамор Иран М600, премиум-укладка" width="600" height="450" loading="lazy"><figcaption>Кремль под Мрамор · Иран М600</figcaption></figure></div>
+      <div class="col col-4" data-reveal><figure class="img-frame img-frame--gal"><img src="img/besh-tash-01.jpg" alt="Беш Таш во дворе частного дома, мультиформатная укладка GRANITAS" width="600" height="450" loading="lazy"><figcaption>Беш Таш · Частный Двор</figcaption></figure></div>
+      <div class="col col-4" data-reveal><figure class="img-frame img-frame--gal"><img src="img/kreml-marble-kz-02.jpg" alt="Двор под брусчатку Кремль под мрамор Казахстан GRANITAS" width="600" height="450" loading="lazy"><figcaption>Кремль под Мрамор · KZ</figcaption></figure></div>
+      <div class="col col-4" data-reveal><figure class="img-frame img-frame--gal"><img src="img/pressed-kirpichik-03.jpg" alt="Парковка с прессованным кирпичиком GRANITAS, толщина 6 см" width="600" height="450" loading="lazy"><figcaption>Прессованный · Парковка</figcaption></figure></div>
+      <div class="col col-4" data-reveal><figure class="img-frame img-frame--gal"><img src="img/kirpichik-01.jpg" alt="Брусчатка Кирпичик GRANITAS — классическая плетёночная раскладка" width="600" height="450" loading="lazy"><figcaption>Кирпичик · Плетёнка</figcaption></figure></div>
+      <div class="col col-4" data-reveal><figure class="img-frame img-frame--gal"><img src="img/kreml-marble-iran-02.jpg" alt="Кремль под мрамор Иран М600 на объекте — глянцевый мрамор GRANITAS" width="600" height="450" loading="lazy"><figcaption>Кремль · Иран М600</figcaption></figure></div>
+      <div class="col col-4" data-reveal><figure class="img-frame img-frame--gal"><img src="img/kreml-anthracite-01.jpg" alt="Современный двор с брусчаткой Кремль антрацит GRANITAS" width="600" height="450" loading="lazy"><figcaption>Кремль Антрацит</figcaption></figure></div>
+      <div class="col col-4" data-reveal><figure class="img-frame img-frame--gal"><img src="img/kreml-marble-kz-04.jpg" alt="Кремль под мрамор Казахстан GRANITAS на готовом объекте" width="600" height="450" loading="lazy"><figcaption>Кремль под Мрамор · KZ</figcaption></figure></div>
+      <div class="col col-4" data-reveal><figure class="img-frame img-frame--gal"><img src="img/pressed-kirpichik-01.jpg" alt="Прессованный кирпичик серый GRANITAS — для нагруженных площадок" width="600" height="450" loading="lazy"><figcaption>Прессованный · Серый</figcaption></figure></div>
     </div>
   </div>
 </section>
@@ -788,21 +790,21 @@
 <!-- ───────── VIDEO ───────── -->
 <section class="section" id="video">
   <div class="container">
-    <header class="section__head">
+    <header class="section__head section-header">
       <div class="eyebrow">Видео</div>
       <h2>Объекты GRANITAS в Работе</h2>
       <p class="section__lead">Реальная укладка нашими бригадами — съёмка с площадок Бишкека.</p>
     </header>
 
     <div class="row">
-      <div class="col col-6 reveal">
+      <div class="col col-6" data-reveal>
         <div class="video">
           <video controls muted playsinline preload="metadata" poster="img/kreml-marble-iran-01.jpg">
             <source src="videos/video5343661278751661815.mp4" type="video/mp4">
           </video>
         </div>
       </div>
-      <div class="col col-6 reveal">
+      <div class="col col-6" data-reveal>
         <div class="video">
           <video controls muted playsinline preload="metadata" poster="img/besh-tash-02.jpg">
             <source src="videos/video5343661278751661838.mp4" type="video/mp4">
@@ -816,14 +818,14 @@
 <!-- ───────── REVIEWS ───────── -->
 <section class="section section--alt" id="reviews">
   <div class="container">
-    <header class="section__head">
+    <header class="section__head section-header">
       <div class="eyebrow">Отзывы</div>
       <h2>Что Говорят Заказчики</h2>
       <p class="section__lead">Реальные комментарии клиентов из Instagram @_bruschatka_bishkek.</p>
     </header>
 
     <div class="row">
-      <div class="col col-6 reveal">
+      <div class="col col-6" data-reveal>
         <figure class="quote">
           <blockquote>«Очень красивая брусчатка, успехов в работе.»</blockquote>
           <figcaption>
@@ -832,7 +834,7 @@
           </figcaption>
         </figure>
       </div>
-      <div class="col col-6 reveal">
+      <div class="col col-6" data-reveal>
         <figure class="quote">
           <blockquote>«Уложили мощную кремлёвскую брусчатку на дом — стоит как влитая.»</blockquote>
           <figcaption>
@@ -841,7 +843,7 @@
           </figcaption>
         </figure>
       </div>
-      <div class="col col-6 reveal">
+      <div class="col col-6" data-reveal>
         <figure class="quote">
           <blockquote>«Мы тоже уложили GRANITAS, выглядит очень красиво.»</blockquote>
           <figcaption>
@@ -850,7 +852,7 @@
           </figcaption>
         </figure>
       </div>
-      <div class="col col-6 reveal">
+      <div class="col col-6" data-reveal>
         <figure class="quote">
           <blockquote>«Красиво, мы тоже сделали себе — благодарны команде.»</blockquote>
           <figcaption>
@@ -866,12 +868,12 @@
 <!-- ───────── FAQ ───────── -->
 <section class="section" id="faq">
   <div class="container">
-    <header class="section__head">
+    <header class="section__head section-header">
       <div class="eyebrow">Вопросы</div>
       <h2>Часто Задаваемые Вопросы</h2>
     </header>
 
-    <div class="faq reveal">
+    <div class="faq" data-reveal>
       <details class="faq__item">
         <summary>Какой цемент используется в брусчатке GRANITAS?</summary>
         <p>Премиум-цемент М600 производства Ирана для топ-линеек и цемент Казахстана для среднего сегмента. М600 — высшая марка прочности по СНиП.</p>
@@ -907,14 +909,14 @@
 <!-- ───────── CONTACTS ───────── -->
 <section class="section section--alt" id="contacts">
   <div class="container">
-    <header class="section__head">
+    <header class="section__head section-header">
       <div class="eyebrow">Контакты</div>
       <h2>Получить Расчёт за 15 Минут</h2>
       <p class="section__lead">Опишите задачу — пришлём расчёт стоимости с цементом, толщиной и сроком укладки. Звонок или WhatsApp.</p>
     </header>
 
     <div class="row split">
-      <div class="col col-6 reveal">
+      <div class="col col-6" data-reveal="left">
         <div class="contacts-info">
           <ul class="contacts-list">
             <li>
@@ -945,7 +947,7 @@
         </div>
       </div>
 
-      <div class="col col-6 reveal">
+      <div class="col col-6" data-reveal="right">
         <form class="form" onsubmit="event.preventDefault(); this.querySelector('.form__ok').hidden=false;">
           <h3 class="form__title">Заявка на Расчёт</h3>
 
@@ -1060,6 +1062,12 @@
   </div>
 </footer>
 
+<script defer src="https://unpkg.com/lenis@1/dist/lenis.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/split-type@0.3/umd/index.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script defer src="js/effects.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

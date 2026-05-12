@@ -51,22 +51,9 @@
     });
   });
 
-  // ---- Scroll reveal (IntersectionObserver) ----
-  var reveals = document.querySelectorAll('.reveal');
-  if ('IntersectionObserver' in window && reveals.length) {
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-in');
-          io.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-
-    reveals.forEach(function (el) { io.observe(el); });
-  } else {
-    reveals.forEach(function (el) { el.classList.add('is-in'); });
-  }
+  // ---- Scroll reveal: handled by effects.js (GSAP + ScrollTrigger) ----
+  // Legacy .reveal class kept for non-JS fallback (CSS shows is-in equivalent)
+  document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('is-in'); });
 
   // ---- Accordion: закрывать другие при открытии (single-open) ----
   var faqItems = document.querySelectorAll('.faq__item');

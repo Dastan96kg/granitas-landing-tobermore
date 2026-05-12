@@ -39,7 +39,7 @@
 
 /* ---- Reset ---- */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
+/* scroll-behavior removed — Lenis handles smooth scroll */
 body {
   font-family: "Hanken Grotesk", system-ui, sans-serif;
   font-weight: 400;
@@ -513,13 +513,38 @@ p  { color: var(--text-muted); }
   letter-spacing: 0.05em;
 }
 
-/* ---- Reveal animation ---- */
-.reveal { opacity: 0; transform: translateY(24px); transition: opacity 700ms var(--ease), transform 700ms var(--ease); }
-.reveal.is-in { opacity: 1; transform: none; }
+/* ---- Reveal animation (legacy fallback, GSAP handles modern path) ---- */
+.reveal { opacity: 1; transform: none; }
+
+/* GSAP-controlled reveals — start hidden, GSAP animates in */
+[data-reveal] { opacity: 0; }
+.no-js [data-reveal], html.no-gsap [data-reveal] { opacity: 1; }
+
+/* Lenis smooth-scroll */
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+.lenis.lenis-stopped { overflow: hidden; }
+
+/* Scroll progress bar (effects.js injects) */
+.scroll-progress {
+  position: fixed; top: 0; left: 0;
+  width: 100%; height: 3px;
+  background: var(--accent);
+  transform: scaleX(0); transform-origin: 0 50%;
+  z-index: 9999; pointer-events: none;
+}
+
+/* Section header structure for char-reveal (data-style 13) */
+.section-header { max-width: 720px; margin-bottom: var(--s-6); }
+.section-header h2 { margin-bottom: var(--s-2); }
+
+/* Subtle parallax wrapper — overflow hidden so scale doesn't leak */
+[data-parallax] { overflow: hidden; }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { transition: none; animation: none; }
-  .reveal { opacity: 1; transform: none; }
+  .reveal, [data-reveal] { opacity: 1; transform: none; }
 }
 
 /* ============================================================
