@@ -31,4 +31,16 @@
 ## Tobermore Constraints
 - B2B sharp-style preserved (no border-radius, Hanken Grotesk, Title Case)
 - SEO additions in <head> only — zero visual impact
-- About section (if added) follows split-text Tobermore aesthetic
+- About section follows split-text Tobermore aesthetic
+
+## Result (after)
+- **GEO Score:** 83/100 (good) — was 25/100 (critical)
+- **Breakdown after:** robots 15, llms 12, schema 13, meta 14, content 12, signals 6, ai_discovery 5, brand_entity 6, negative_penalty 0
+- **Delta:** +58 points
+
+## Known Limitations
+- `/.well-known/ai.txt` returns 404 — GitHub Pages refuses to serve `.well-known/*` even with `.nojekyll`. Only fixable via custom domain.
+- Auditor recommends Wikipedia/Wikidata/LinkedIn/Crunchbase `sameAs` — not applicable for a small local Bishkek brand without those pages.
+- Visible "/about" link recommendation persists; we have "О Компании" anchor #about — auditor heuristic looks for /about path.
+- Product schema "has_price" requires explicit price (we don't expose KGS pricing publicly).
+- WebMCP toolname/tooldescription — experimental Chrome AI agent spec, intentionally skipped.
