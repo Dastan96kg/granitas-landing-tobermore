@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // ─── STYLE-BASED EFFECTS GATING ────────────────────────
   const _styleNum = (document.body.dataset.style || "").trim();
   const _BASELINE = new Set([
-    "scroll-progress","lenis-smooth-scroll","nav-hide-show","smooth-anchor",
+    "scroll-progress","lenis-smooth-scroll","smooth-anchor",
     "image-lightbox","animated-counters","footer-reveal","reveal-fade-up",
     "stagger-cards","section-headers-char","contact-list-stagger",
     "section-divider-lines","ripple-effect","gradient-border",
