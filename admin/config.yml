@@ -1,0 +1,139 @@
+backend:
+  name: github
+  repo: Dastan96kg/granitas-landing-tobermore
+  branch: main
+  automatic_deployments: true
+
+media_folder: img
+public_folder: img
+
+site_url: https://granitas.kg
+display_url: https://granitas.kg
+logo_url: https://granitas.kg/img/logo.jpg
+
+collections:
+  - name: site
+    label: Сайт
+    files:
+      - name: settings
+        label: "📞 Контакты и настройки"
+        file: content/settings.json
+        fields:
+          - name: phone
+            label: "Телефон (основной)"
+            widget: string
+            hint: "Формат: +996 555 277 222 — используется во всех кнопках «Позвонить»"
+          - name: phone2
+            label: "Телефон 2"
+            widget: string
+            required: false
+            default: ""
+            hint: "Второй номер. Оставьте пустым, если не нужен"
+          - name: whatsapp
+            label: "WhatsApp (только цифры)"
+            widget: string
+            hint: "Например: 996555277222 — используется в ссылках wa.me"
+          - name: instagram
+            label: "Instagram (без @)"
+            widget: string
+            hint: "Например: _bruschatka_bishkek_"
+          - name: address
+            label: "Адрес (как показывать на сайте)"
+            widget: string
+          - name: street
+            label: "Улица и дом (для Google-карт и схемы)"
+            widget: string
+            hint: "Например: ул. Восточная, 248а"
+          - name: city
+            label: "Город"
+            widget: string
+          - name: hours
+            label: "Часы работы"
+            widget: string
+            hint: "Например: Пн–Сб · 09:00 — 18:00"
+          - name: show_prices
+            label: "Показывать цены в каталоге на сайте"
+            widget: boolean
+            default: false
+            required: false
+            hint: "Если включено — в карточках каталога появится «от N сом/м²» (цены берутся из раздела Каталог)"
+
+      - name: catalog
+        label: "🧱 Каталог и цены"
+        file: content/catalog.json
+        fields:
+          - name: items
+            label: "Виды брусчатки"
+            label_singular: "вид брусчатки"
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - name: title
+                label: "Название"
+                widget: string
+              - name: meta
+                label: "Подзаголовок карточки"
+                widget: string
+                hint: "Например: Толщина 5 см · Стандарт"
+              - name: desc
+                label: "Описание (1–2 предложения)"
+                widget: text
+              - name: image
+                label: "Фото"
+                widget: image
+              - name: alt
+                label: "Alt-текст фото (для SEO)"
+                widget: string
+                required: false
+              - name: featured
+                label: "Метка «Премиум»"
+                widget: boolean
+                default: false
+                required: false
+              - name: price_low
+                label: "Цена от (сом/м²)"
+                widget: number
+                value_type: int
+                required: false
+              - name: price_high
+                label: "Цена до (сом/м²)"
+                widget: number
+                value_type: int
+                required: false
+              - name: seo_name
+                label: "SEO-название (для Google)"
+                widget: string
+                required: false
+                hint: "Если пусто — берётся Название"
+              - name: seo_desc
+                label: "SEO-описание (для Google)"
+                widget: text
+                required: false
+                hint: "Если пусто — берётся Описание"
+              - name: seo_image
+                label: "SEO-фото (для Google)"
+                widget: image
+                required: false
+                hint: "Если пусто — берётся Фото"
+
+      - name: gallery
+        label: "🖼 Галерея работ"
+        file: content/gallery.json
+        fields:
+          - name: items
+            label: "Фото объектов"
+            label_singular: "фото"
+            widget: list
+            summary: "{{fields.caption}}"
+            fields:
+              - name: image
+                label: "Фото"
+                widget: image
+              - name: caption
+                label: "Подпись"
+                widget: string
+                hint: "Например: Кремль под Мрамор · Иран М600"
+              - name: alt
+                label: "Alt-текст (для SEO)"
+                widget: string
+                required: false

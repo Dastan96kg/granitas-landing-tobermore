@@ -12,7 +12,10 @@
     "lon": 74.6122
   },
   "contact": {
-    "phone": ["+996555277222", "+996709777980"],
+    "phone": [
+      "+996555277222",
+      "+996709777980"
+    ],
     "whatsapp": "https://wa.me/996555277222",
     "instagram": "https://instagram.com/_bruschatka_bishkek_"
   },
@@ -26,6 +29,8 @@
   "products_count": 8,
   "warranty_years": "3-5",
   "delivery": "Бесплатно по Бишкеку от 1 поддона",
-  "languages": ["ru"],
+  "languages": [
+    "ru"
+  ],
   "last_updated": "2026-05-08"
 }

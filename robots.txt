@@ -3,6 +3,7 @@
 
 User-agent: *
 Allow: /
+Disallow: /admin/
 
 # AI crawlers — OpenAI
 User-agent: GPTBot

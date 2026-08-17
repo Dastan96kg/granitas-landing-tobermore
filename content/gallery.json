@@ -1,0 +1,49 @@
+{
+  "items": [
+    {
+      "image": "img/kreml-marble-iran-01.jpg",
+      "caption": "Кремль под Мрамор · Иран М600",
+      "alt": "Объект GRANITAS — Кремль под мрамор Иран М600, премиум-укладка"
+    },
+    {
+      "image": "img/besh-tash-01.jpg",
+      "caption": "Беш Таш · Частный Двор",
+      "alt": "Беш Таш во дворе частного дома, мультиформатная укладка GRANITAS"
+    },
+    {
+      "image": "img/kreml-marble-kz-02.jpg",
+      "caption": "Кремль под Мрамор · KZ",
+      "alt": "Двор под брусчатку Кремль под мрамор Казахстан GRANITAS"
+    },
+    {
+      "image": "img/pressed-kirpichik-03.jpg",
+      "caption": "Прессованный · Парковка",
+      "alt": "Парковка с прессованным кирпичиком GRANITAS, толщина 6 см"
+    },
+    {
+      "image": "img/kirpichik-01.jpg",
+      "caption": "Кирпичик · Плетёнка",
+      "alt": "Брусчатка Кирпичик GRANITAS — классическая плетёночная раскладка"
+    },
+    {
+      "image": "img/kreml-marble-iran-02.jpg",
+      "caption": "Кремль · Иран М600",
+      "alt": "Кремль под мрамор Иран М600 на объекте — глянцевый мрамор GRANITAS"
+    },
+    {
+      "image": "img/kreml-anthracite-01.jpg",
+      "caption": "Кремль Антрацит",
+      "alt": "Современный двор с брусчаткой Кремль антрацит GRANITAS"
+    },
+    {
+      "image": "img/kreml-marble-kz-04.jpg",
+      "caption": "Кремль под Мрамор · KZ",
+      "alt": "Кремль под мрамор Казахстан GRANITAS на готовом объекте"
+    },
+    {
+      "image": "img/pressed-kirpichik-01.jpg",
+      "caption": "Прессованный · Серый",
+      "alt": "Прессованный кирпичик серый GRANITAS — для нагруженных площадок"
+    }
+  ]
+}
